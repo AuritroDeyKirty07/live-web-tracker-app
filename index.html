@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons8-location-pin-32.png" type="image/x-icon">
+    <title>Live Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body>
+    <div id="login" class="section">
+        <h1>Live Location Tracker</h1>
+        <button id="loginBtn">Login with Google</button>
+    </div>
+
+    <div id="dashboard" class="section hidden">
+        <div class="user">
+            <img id="userPic" src="" alt="Profile" referrerpolicy="no-referrer">
+            <h2 id="userName">User Name</h2>
+        </div>
+        <button id="logoutBtn">Logout</button>
+        
+        <hr>
+        
+        <div class="actions">
+            <h3>Create a Space</h3>
+            <button id="createSpaceBtn">Create Space</button>
+            
+            <h3>Or Join a Space</h3>
+            <input type="text" id="roomInput" placeholder="Enter Room Key">
+            <button id="joinSpaceBtn">Join Space</button>
+        </div>
+    </div>
+
+    <div id="mapContainer" class="section hidden">
+        <div class="header">
+            <span id="roomDisplay">Room: </span>
+            <button id="copyRoomBtn">Copy Key</button>
+            <button id="leaveRoomBtn">Leave Space</button>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
