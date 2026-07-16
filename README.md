@@ -8,8 +8,6 @@
 A modern web application that allows users to securely share their live location inside private rooms using Firebase Authentication, Firestore, Leaflet Maps, and the Geolocation API.
 </p>
 
-<img src="./assets/live-web-tracker-ss.PNG"/>
-
 <br>
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -186,6 +184,6 @@ Full Stack Developer
 
 <div align="center">
 
-⭐ If you found this project interesting, consider ⭐ the repository!
+If you found this project interesting, consider ⭐ the repository!
 
 </div>
