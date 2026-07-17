@@ -110,18 +110,23 @@ Responsive UI
 # Project Structure
 
 ```
-Live-Web-Tracker
+live-web-tracker-app
+│
+├── assets
+│   ├── dashboard.PNG
+│   ├── icons8-location-pin-32.png
+│   ├── login.PNG
+│   ├── map.PNG
+│   └── popup.PNG
+│
+├── logic
+│   ├── firebase.js
+│   └── controllers
+│       └── functionality.js
 │
 ├── index.html
 ├── style.css
 ├── script.js
-│
-├── assets/
-│   ├── login.png
-│   ├── dashboard.png
-│   ├── map.png
-│   └── popup.png
-│
 └── README.md
 ```
 
