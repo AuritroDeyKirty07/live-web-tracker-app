@@ -119,8 +119,9 @@ live-web-tracker-app
 │   ├── map.PNG
 │   └── popup.PNG
 │
-├── logic
-│   ├── firebase.js
+├── src
+│   ├── utils
+│       └──firebase.js
 │   └── controllers
 │       └── functionality.js
 │
