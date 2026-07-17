@@ -132,6 +132,33 @@ live-web-tracker-app
 
 ---
 
+# System Architecture
+
+```text
+User
+ │
+ ▼
+Google Authentication
+ │
+ ▼
+Firebase Auth
+ │
+ ▼
+Cloud Firestore
+ │
+ ├──────────────┐
+ ▼              ▼
+Realtime Sync  Room Data
+ │
+ ▼
+Leaflet + OpenStreetMap
+ │
+ ▼
+Browser Geolocation API
+```
+
+---
+
 # Getting Started
 
 ## Clone Repository
@@ -142,9 +169,21 @@ git clone https://github.com/AuritroDeyKirty07/live-web-tracker-app.git
 
 ## Live Link
 
-```
-https://live-web-tracker-app.vercel.app/
-```
+<p align="center">
+
+<a href="https://live-web-tracker-app.vercel.app">
+
+<img src="https://img.shields.io/badge/🚀%20Live%20Demo-Open-success?style=for-the-badge">
+
+</a>
+
+<a href="https://github.com/AuritroDeyKirty07/live-web-tracker-app">
+
+<img src="https://img.shields.io/badge/View-Repository-black?style=for-the-badge&logo=github">
+
+</a>
+
+</p>
 
 ---
 
@@ -189,6 +228,8 @@ Full Stack Developer
 
 <div align="center">
 
-If you found this project interesting, consider ⭐ the repository!
+### ⭐ If you found this project useful, consider starring the repository!
+
+Made with ❤️ by **Auritro Dey Kirty**
 
 </div>
