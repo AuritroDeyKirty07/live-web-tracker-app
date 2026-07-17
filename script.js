@@ -1,2 +1,2 @@
-import "./logic/firebase.js";
-import "./logic/controllers/functionality.js";
+import "./src/utils/firebase.js";
+import "./src/controllers/functionality.js";
