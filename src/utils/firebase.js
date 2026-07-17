@@ -17,7 +17,6 @@ import {
   getDocs,
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyBO3EWhHylTroe4JnEAcobC1zaHKUscdA0",
   authDomain: "live-tracker-9a347.firebaseapp.com",
@@ -28,10 +27,8 @@ const firebaseConfig = {
   measurementId: "G-NH7GGDN1SN",
 };
 
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-
 
 export { auth, db, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, doc, setDoc, getDoc, onSnapshot, deleteDoc, collection, getDocs };
