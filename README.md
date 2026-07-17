@@ -121,7 +121,7 @@ live-web-tracker-app
 │
 ├── src
 │   ├── utils
-│       └──firebase.js
+│   │   └──firebase.js
 │   └── controllers
 │       └── functionality.js
 │
