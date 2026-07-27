@@ -17,12 +17,14 @@
         <script async
             src="https://www.googletagmanager.com/gtag/js?id=G-P79VTY5WCD"></script>
         <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'G-P79VTY5WCD');
-
+gtag('config', 'G-P79VTY5WCD', {
+  debug_mode: true,
+  send_page_view: true
+});
 </script>
     </head>
     <body>
