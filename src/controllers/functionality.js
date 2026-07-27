@@ -67,6 +67,7 @@ function generateRoomCode() {
 }
 
 createSpaceBtn.addEventListener("click", async function () {
+    gtag('event', 'create_room');
   try {
     const roomId = generateRoomCode();
     await setDoc(doc(db, "rooms", roomId), {
@@ -81,6 +82,7 @@ createSpaceBtn.addEventListener("click", async function () {
 });
 
 joinSpaceBtn.addEventListener("click", async () => {
+  gtag('event', 'join_room');
   const roomId = roomInput.value.trim().toUpperCase();
   if (roomId.length == 0) {
     alert("Please enter a room key");
@@ -160,8 +162,13 @@ function startLocationTracking() {
     alert("Geolocation not available in this browser");
     return;
   }
+  let permissionGranted =false
   watchId = navigator.geolocation.watchPosition(
     async function (position) {
+      if(!permissionGranted){
+        gtag('event', 'location_permission_granted');
+        permissionGranted = true
+      }
       let latitude = position.coords.latitude;
       let longitude = position.coords.longitude;
       if (!hasZoomedIn && map) {
@@ -290,6 +297,7 @@ window.addEventListener("beforeunload", () => {
 
 if (shareLinkBtn) {
   shareLinkBtn.addEventListener("click", () => {
+  gtag('event', 'share_room_link');
     if (currentRoom) {
       const link = `${window.location.origin}${window.location.pathname}?room=${currentRoom}`;
       navigator.clipboard.writeText(link);
