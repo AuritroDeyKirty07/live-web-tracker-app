@@ -17,6 +17,8 @@ body {
     border: 1px solid #30363d;
     border-radius: 16px;
     width: 320px;
+    max-width: 90%;
+    box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -25,9 +27,9 @@ body {
 }
 
 #mapContainer {
-    width: 90vw;
+    width: 95vw;
     max-width: 900px;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
 }
@@ -119,6 +121,8 @@ hr {
     border-radius: 12px;
     border: 1px solid #30363d;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 #roomDisplay {
@@ -135,4 +139,31 @@ hr {
 
 #sosBtn:hover {
     background-color: #f85149;
+}
+
+@media (max-width: 600px) {
+    #mapContainer {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+        padding: 12px;
+    }
+    
+    .header {
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .header button {
+        flex: 1 1 auto;
+        padding: 8px;
+        margin: 4px;
+        font-size: 14px;
+    }
+    
+    #roomDisplay {
+        width: 100%;
+        margin-bottom: 8px;
+    }
 }
